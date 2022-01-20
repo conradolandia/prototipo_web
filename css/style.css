@@ -1,0 +1,117 @@
+/* fuentes */
+@font-face {
+    font-family: 'Obliqua ITC Std';
+    src: local('Obliqua ITC Std Bold Italic'), local('ObliquaITCStd-BoldItalic'),
+        url('fonts/ObliquaITCStd-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Obliqua ITC Std';
+    src: local('Obliqua ITC Std'), local('ObliquaITCStd-Regular'),
+        url('fonts/ObliquaITCStd-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Obliqua ITC Std';
+    src: local('Obliqua ITC Std Italic'), local('ObliquaITCStd-Italic'),
+        url('fonts/ObliquaITCStd-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Obliqua ITC Std';
+    src: local('Obliqua ITC Std Bold'), local('ObliquaITCStd-Bold'),
+        url('fonts/ObliquaITCStd-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Tema de color */
+:root {
+    /* color de ¡ fondo */
+    --raisin-black: hsla(233, 26%, 14%, 1);
+  
+    /* colores para texto y destacados */
+    --gainsboro: hsla(0, 0%, 70%, 1); /* Gris claro para texto */
+    --pale-pink: hsla(5, 48%, 56%, 1); /* rosa claro para menús */
+    --fuzzy-wuzzy: hsla(6, 54%, 59%, 1); /* salmón para flechitas de menús */
+  
+    /* tema de colores para tipos de aliados */
+    --sage: hsla(64, 26%, 64%, 1);
+    --green-yellow-crayola: hsla(55, 71%, 75%, 1);
+    --gold-crayola: hsla(35, 67%, 74%, 1);
+    --beige: hsla(70, 45%, 87%, 1);
+    --cinnamon-satin: hsla(334, 34%, 55%, 1);
+    --new-york-pink: hsla(0, 53%, 71%, 1);
+    --opal: hsla(164, 33%, 82%, 1);
+    --cerulean-frost: hsla(214, 34%, 60%, 1);
+  }
+  
+  /* Para poder llenar verticalmente la pantalla con main y que siga siendo azul el fondo al hacer scroll horizontal */
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    background-color: var(--raisin-black);
+    font-family: 'Obliqua ITC Std', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+  
+  /* Estilos base */
+  main.app {
+    background-color: var(--raisin-black);
+    color: var(--gainsboro);
+    padding: 1em;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  
+  /* Colores para aliados */
+  .tipo-comunidad_internacional {
+    fill: var(--sage);
+  }
+  
+  .tipo-comunidad_academica {
+    fill: var(--green-yellow-crayola);
+  }
+  
+  .tipo-figuras_publicas {
+    fill: var(--gold-crayola);
+  }
+  
+  .tipo-institucionalidad {
+    fill: var(--beige);
+  }
+  
+  .tipo-medios {
+    fill: var(--cinnamon-satin);
+  }
+  
+  .tipo-organizaciones {
+    fill: var(--new-york-pink);
+  }
+  
+  .tipo-sector_privado {
+    fill: var(--opal);
+  }
+  
+  .tipo-sociedad_politica {
+    fill: var(--cerulean-frost);
+  }
+  
+
+  /* Intro */
+  .intro {
+      max-width: 480px;
+  }
